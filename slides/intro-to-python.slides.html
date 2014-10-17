@@ -1735,8 +1735,25 @@ div.output_prompt {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="presented-by-0xcmp">Presented by @0xCMP</h1>
+<h1 id="presented-by-chris-0xcmp-">Presented by Chris (@0xCMP)</h1>
 <h2 id="fall-2014-programming-languages">FALL 2014 - Programming Languages</h2>
+</div>
+</div>
+</div></section>
+    </section><section>
+    <section>
+    
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="python">Python</h1>
+<blockquote>
+<p>Its design philosophy emphasizes code readability, and its syntax allows programmers to express concepts in fewer lines of code than would be possible in languages such as C. The language provides constructs intended to enable clear programs on both a small and large scale.[20]</p>
+<p>Python supports multiple programming paradigms, including object-oriented, imperative and functional programming or procedural styles. It features a dynamic type system and automatic memory management and has a large and comprehensive standard library.</p>
+<p>-- <a href="https://en.wikipedia.org/wiki/Python_(programming_language"><strong>Wikipedia on Python</strong></a></p>
+</blockquote>
 </div>
 </div>
 </div></section>
@@ -1815,8 +1832,14 @@ div.output_prompt {
 <li>Also uses Cython for speed</li>
 </ul>
 </li>
+<li>CCP (Eve Online)<ul>
+<li>Uses stackless python for their server and clients</li>
+<li><a href="http://community.eveonline.com/news/dev-blogs/stackless-python-2.7/">http://community.eveonline.com/news/dev-blogs/stackless-python-2.7/</a></li>
+<li><a href="./rfp-ep8-mempressure.mp3">rfp-ep8-mempressure.mp3</a></li>
 </ul>
-<p>Many more at Python&#39;s website.</p>
+</li>
+</ul>
+<p><a href="https://www.python.org/about/success/">Many more at Python&#39;s website.</a></p>
 </div>
 </div>
 </div></section><section>
@@ -1830,14 +1853,39 @@ div.output_prompt {
 <p><strong>Python is great at getting an application created quickly and cleanly</strong></p>
 <ul>
 <li>Single threaded or I/O intensive things</li>
-<li>Python isn&#39;t as effcient as C or C++, but it is fast. Plus it integrates with C/C++ well.<blockquote>
-<p>Sid Myer&#39;s Civilization mods are written in Python because of this.</p>
-</blockquote>
+<li>Works well for many applications thanks to libraries with C extensions</li>
+<li>Not as fast as C/C++, but it is very easy to call C/C++ code</li>
+<li>Also strong as a scripting language for a program<ul>
+<li><em>Sid Myer&#39;s Civilization mods are written in Python because of this.</em></li>
+<li>Use of python to script robots at a semiconductor manufacturing facility in Fishkill, NY originally controlled with C++<ul>
+<li><a href="https://www.python.org/about/success/philips/">https://www.python.org/about/success/philips/</a></li>
+</ul>
+</li>
+</ul>
 </li>
 </ul>
 </div>
 </div>
-</div></section>
+</div><div class="fragment">
+    
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="what-is-it-not-good-at-">What is it not good at?</h1>
+<ul>
+<li>Kernel development</li>
+<li>Drivers</li>
+<li>Crtical real time code</li>
+<li>Embedded and mobile devices</li>
+<li>Highly important code (airbags, audo jack)</li>
+</ul>
+<p><a href="http://www.reddit.com/r/Python/comments/1dsv7m/what_is_python_not_a_good_language_for/">http://www.reddit.com/r/Python/comments/1dsv7m/what_is_python_not_a_good_language_for/</a></p>
+</div>
+</div>
+</div>
+    </div></section>
     </section><section>
     <section>
     
@@ -1957,7 +2005,7 @@ div.output_prompt {
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
-In&nbsp;[17]:
+In&nbsp;[1]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
@@ -1990,7 +2038,7 @@ hello world
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
-In&nbsp;[18]:
+In&nbsp;[2]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
@@ -2006,7 +2054,7 @@ In&nbsp;[18]:
 
 
 <div class="output_area"><div class="prompt output_prompt">
-    Out[18]:</div>
+    Out[2]:</div>
 
 
 <div class="output_text output_subarea output_pyout">
@@ -2026,7 +2074,7 @@ In&nbsp;[18]:
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
-In&nbsp;[19]:
+In&nbsp;[3]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
@@ -2042,7 +2090,7 @@ In&nbsp;[19]:
 
 
 <div class="output_area"><div class="prompt output_prompt">
-    Out[19]:</div>
+    Out[3]:</div>
 
 
 <div class="output_text output_subarea output_pyout">
@@ -2074,7 +2122,7 @@ In&nbsp;[19]:
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
-In&nbsp;[20]:
+In&nbsp;[4]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
@@ -2090,7 +2138,7 @@ In&nbsp;[20]:
 
 
 <div class="output_area"><div class="prompt output_prompt">
-    Out[20]:</div>
+    Out[4]:</div>
 
 
 <div class="output_text output_subarea output_pyout">
@@ -2110,7 +2158,7 @@ In&nbsp;[20]:
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
-In&nbsp;[1]:
+In&nbsp;[5]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
@@ -2166,7 +2214,7 @@ hello hello hello hello
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
-In&nbsp;[4]:
+In&nbsp;[6]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
@@ -2187,6 +2235,7 @@ In&nbsp;[4]:
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>
 [1, 2, 3, 4, 5, 6]
+&lt;type &apos;list&apos;&gt;
 
 </pre>
 </div>
@@ -2212,7 +2261,7 @@ In&nbsp;[4]:
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
-In&nbsp;[5]:
+In&nbsp;[7]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
@@ -2249,7 +2298,7 @@ In&nbsp;[5]:
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
-In&nbsp;[2]:
+In&nbsp;[8]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
@@ -2260,29 +2309,12 @@ In&nbsp;[2]:
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>
-{&apos;name&apos;: &apos;chris&apos;, &apos;key&apos;: &apos;value&apos;}
-My name is chris
-
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
 </div><div class="fragment">
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
-In&nbsp;[6]:
+In&nbsp;[9]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
@@ -2315,7 +2347,7 @@ In&nbsp;[6]:
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
-In&nbsp;[7]:
+In&nbsp;[10]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
@@ -2358,7 +2390,7 @@ My name is chris
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
-In&nbsp;[8]:
+In&nbsp;[11]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
@@ -2397,7 +2429,7 @@ It&apos;s 5
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
-In&nbsp;[11]:
+In&nbsp;[12]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
@@ -2454,7 +2486,7 @@ item is None
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
-In&nbsp;[12]:
+In&nbsp;[13]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
@@ -2472,7 +2504,7 @@ In&nbsp;[12]:
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
-In&nbsp;[13]:
+In&nbsp;[14]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
@@ -2554,7 +2586,7 @@ Index of 2 and value of abc
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
-In&nbsp;[20]:
+In&nbsp;[16]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
@@ -2587,7 +2619,7 @@ Type of my_list is &lt;type &apos;list&apos;&gt; and the first element is &lt;ty
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
-In&nbsp;[32]:
+In&nbsp;[17]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
@@ -2630,7 +2662,7 @@ In&nbsp;[32]:
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
-In&nbsp;[26]:
+In&nbsp;[18]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
@@ -2669,7 +2701,7 @@ Old type &lt;type &apos;classobj&apos;&gt; and New type &lt;type &apos;type&apos
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
-In&nbsp;[40]:
+In&nbsp;[19]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
@@ -2706,7 +2738,7 @@ Old object &lt;type &apos;instance&apos;&gt; and New object &lt;class &apos;__ma
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="equality-and-variables">Equality and Variables</h2>
+<h2 id="-equality-and-variables-http-python-net-goodger-projects-pycon-2007-idiomatic-handout-html-other-languages-have-variables-"><a href="http://python.net/~goodger/projects/pycon/2007/idiomatic/handout.html#other-languages-have-variables">Equality and Variables</a></h2>
 <p>In Python variables are more like &quot;tags&quot; than &quot;boxes&quot;</p>
 <table>
 <tr>
@@ -2729,7 +2761,7 @@ Python
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
-In&nbsp;[34]:
+In&nbsp;[20]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
@@ -2745,7 +2777,7 @@ In&nbsp;[34]:
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
-In&nbsp;[35]:
+In&nbsp;[21]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
@@ -2761,7 +2793,7 @@ In&nbsp;[35]:
 
 
 <div class="output_area"><div class="prompt output_prompt">
-    Out[35]:</div>
+    Out[21]:</div>
 
 
 <div class="output_text output_subarea output_pyout">
@@ -2781,7 +2813,7 @@ True
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
-In&nbsp;[38]:
+In&nbsp;[22]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
@@ -2797,7 +2829,7 @@ In&nbsp;[38]:
 
 
 <div class="output_area"><div class="prompt output_prompt">
-    Out[38]:</div>
+    Out[22]:</div>
 
 
 <div class="output_text output_subarea output_pyout">
@@ -2817,7 +2849,7 @@ False
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
-In&nbsp;[39]:
+In&nbsp;[23]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
@@ -2833,7 +2865,7 @@ In&nbsp;[39]:
 
 
 <div class="output_area"><div class="prompt output_prompt">
-    Out[39]:</div>
+    Out[23]:</div>
 
 
 <div class="output_text output_subarea output_pyout">
@@ -2862,6 +2894,25 @@ True
 </div>
 </div>
 </section>
+    </section><section>
+    <section>
+    
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="resources">Resources</h1>
+<ul>
+<li><a href="http://docs.python-guide.org/en/latest/">Hitchhiker&#39;s Guide to Python</a></li>
+<li><a href="docs.python.org/2/tutorial/index.html">Python 2.7.8 Offical Tutorial</a></li>
+<li><a href="http://learnpythonthehardway.org/book/">Learn Python The Hard Way</a></li>
+<li><a href="http://python.net/~goodger/projects/pycon/2007/idiomatic/handout.html">Code Like a Pythonista: Idiomatic Python</a></li>
+<li><a href="http://www.diveintopython.net/toc/index.html">Dive in to Python</a></li>
+</ul>
+</div>
+</div>
+</div></section>
     </section>
 </div>
 </div>
