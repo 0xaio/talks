@@ -2206,6 +2206,16 @@ hello hello hello hello
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+
+</div>
+</div>
+</div></section><section>
+    
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="lists-dictionaries-and-slicing">Lists, Dictionaries, and Slicing</h2>
 </div>
 </div>
@@ -2889,11 +2899,104 @@ True
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Your-First-program">Your First program<a class="anchor-link" href="#Your-First-program">&#182;</a></h2>
+<h2 id="Some-Simple-Programs">Some Simple Programs<a class="anchor-link" href="#Some-Simple-Programs">&#182;</a></h2>
 </div>
 </div>
 </div>
-</section>
+<div class="fragment">
+    
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Question and answer</p>
+</div>
+</div>
+</div>
+    </div><div class="fragment">
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">
+In&nbsp;[6]:
+</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class="highlight"><pre><span class="kn">import</span> <span class="nn">re</span>
+
+<span class="n">user</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="n">user</span><span class="p">[</span><span class="s">&#39;name&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">raw_input</span><span class="p">(</span><span class="s">&quot;What is your name?&quot;</span><span class="p">)</span>
+<span class="n">user</span><span class="p">[</span><span class="s">&#39;quest&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">raw_input</span><span class="p">(</span><span class="s">&quot;What is your quest?&quot;</span><span class="p">)</span>
+<span class="n">user</span><span class="p">[</span><span class="s">&#39;will-get-shrubbery&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">raw_input</span><span class="p">(</span><span class="s">&quot;We want.... ONE SHRUBBERY.&quot;</span><span class="p">)</span>
+<span class="n">user</span><span class="p">[</span><span class="s">&#39;favorite-color&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">raw_input</span><span class="p">(</span><span class="s">&#39;What is your favorite colour?&#39;</span><span class="p">)</span>
+
+<span class="k">print</span> <span class="s">&#39;-&#39;</span><span class="o">*</span><span class="mi">60</span>
+
+<span class="n">accepted</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="s">r&quot;^((sure|SURE)|(y|Y).*)&quot;</span><span class="p">)</span>
+<span class="n">accepted_status</span> <span class="o">=</span> <span class="s">&quot;will acquire&quot;</span>
+
+<span class="k">if</span> <span class="n">accepted</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">user</span><span class="p">[</span><span class="s">&#39;will-get-shrubbery&#39;</span><span class="p">])</span> <span class="ow">is</span> <span class="bp">None</span><span class="p">:</span>
+    <span class="n">accepted_status</span> <span class="o">=</span> <span class="s">&quot;will not aquire&quot;</span>
+
+<span class="k">print</span> <span class="s">&quot;</span><span class="si">%s</span><span class="s"> is on a quest </span><span class="si">%s</span><span class="s"> and </span><span class="si">%s</span><span class="s"> a shrubbery. His favorite color is </span><span class="si">%s</span><span class="s">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">user</span><span class="p">[</span><span class="s">&#39;name&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">title</span><span class="p">(),</span>
+        <span class="n">user</span><span class="p">[</span><span class="s">&#39;quest&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">lower</span><span class="p">(),</span> <span class="n">accepted_status</span> <span class="p">,</span> <span class="n">user</span><span class="p">[</span><span class="s">&#39;favorite-color&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">upper</span><span class="p">())</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>
+What is your name?King Arthur
+What is your quest?To find the Holy Grail
+We want.... ONE SHRUBBERY.sure
+What is your favorite colour?blue
+------------------------------------------------------------
+King Arthur is on a quest to find the holy grail and will acquire a shrubbery. His favorite color is BLUE
+
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Linked-List">Linked List<a class="anchor-link" href="#Linked-List">&#182;</a></h1>
+</div>
+</div>
+</div>
+<div class="fragment">
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">
+In&nbsp;[]:
+</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class="highlight"><pre> 
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+    </div></section>
     </section><section>
     <section>
     
