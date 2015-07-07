@@ -1,4 +1,0 @@
-talks
-=====
-
-Talks and code
